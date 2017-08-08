@@ -28,7 +28,7 @@ def modularity(g,weight):
     clusters = dendrogram.as_clustering()
     # get the membership vector
     membership = clusters.membership
-    print membership
+    print "Membership = ", membership
     
     #clmembership = g.community_fastgreedy().as_clustering()
 
@@ -163,7 +163,7 @@ def normalizedFiedler(g,weight):
 
 #Average Degree verfied without weights
 #For fully connected should be number of nodes - 1
-#Doubt y it is giving total edges = 2*edges ???
+#Doubt y it is giving total edges = 2*edges ??? because we are having full adjancy matrix not upper or lower triangular
 def avgDegree(g):
     #print len(g.es)
     #print len(g.vs)
@@ -196,7 +196,7 @@ def betweennessCentrality(g):
     return mean(betweenness)
 
 
-#code from net : https://stackoverflow.com/questions/23660696/betweennes-centrality-python
+#code from net : https://stackoverflow.com/questions/23660696/betweennes-centrality-python # Not correct fully
 def brandes(V, A):
     "Compute betweenness centrality in an unweighted graph."
     # Brandes algorithm
