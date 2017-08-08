@@ -1,0 +1,125 @@
+
+****************
+Example 1
+****************
+
+graph taken from: https://www.slideshare.net/jaquechocolate/complex-networks-assortativity 
+Assortativity : given in this link
+other metrics (Clustering Coefficient, Average Path Length, Average Degree, Connection Density) : Calculated by hand
+
+Adjacency Matrix:
+
+0,1,0,0,0,0,0,0,0
+1,0,1,0,0,0,0,0,0
+0,1,0,1,0,0,0,0,0
+0,0,1,0,1,1,1,0,0
+0,0,0,1,0,1,1,0,0
+0,0,0,1,1,0,1,0,0
+0,0,0,1,1,1,0,1,0
+0,0,0,0,0,0,1,0,1
+0,0,0,0,0,0,0,1,0
+
+Graph Measures: (Clustering Coefficient, Average Path Length, Assortativity, Average Degree, Connection Density have been verified)
+--------------
+Modularity:
+0.342975206612
+Clustering Coefficient: 
+0.333333333333
+Average Path Length:
+2.47222222222
+Assortativity:
+0.358333333333
+Fiedler Value:
+0.220222746725
+Normalized Fiedler Value:
+0.140752029694
+Average Degree:
+2.44444444444
+Connection Density:
+0.305555555556
+Betweenness Centrality:
+Average : 5.88888888889
+for all vertices using library : [0.0, 14.0, 24.0, 30.0, 0.0, 0.0, 24.0, 14.0, 0.0]
+for all vertices using code from net : {0: 0, 1: 14, 2: 24, 3: 30, 4: 0, 5: 0, 6: 24, 7: 14, 8: 0}
+
+************
+Example 2
+************
+
+Graph taken from : https://www.researchgate.net/post/Can_anyone_provide_a_short_example_of_how_the_modularity_is_being_calculated_in_networks
+Modularity: Calculated in this link
+
+Adjacency Matrix:
+
+0,1,1,0,0
+1,0,0,0,1
+1,0,0,1,0
+0,0,1,0,1
+0,1,0,1,0
+
+Graph Measures: (Modularity Verified)
+---------------
+Modularity:
+0.08
+Clustering Coefficient:
+0.0
+Average Path Length:
+1.5
+Assortativity:
+nan
+Fiedler Value:
+1.38196601125
+Normalized Fiedler Value:
+0.690983005625
+Average Degree:
+2.0
+Connection Density:
+0.5
+Betweenness Centrality:
+Average : 2
+for all vertices using library : [2.0, 2.0, 2.0, 2.0, 2.0]
+for all vertices using code from net : {0: 2, 1: 2, 2: 2, 3: 2, 4: 2}
+Betweenness Centrality:
+Average = 0.6
+
+
+***********
+Example 3
+***********
+
+Graph taken from : http://med.bioinf.mpi-inf.mpg.de/netanalyzer/help/2.7/index.html#nodeBetween
+Has betweenness centrality calculation : could not verify
+
+Adjacency Matrix
+
+0,0,0,0,0
+1,0,1,1,0
+0,1,0,0,1
+0,1,0,0,1
+0,0,1,1,0
+
+
+Graph Measures:
+--------------
+Modularity:
+0.0
+Clustering Coefficient:
+0.0
+Average Path Length:
+1.6
+Assortativity:
+-0.666666666667
+Fiedler Value:
+0.829913513374
+Normalized Fiedler Value:
+0.591751709536
+Average Degree:
+2
+Connection Density:
+0.5
+Betweenness Centrality:
+Average = 2.4
+for all vertices using library : 0.0, 7.0, 2.0, 2.0, 1.0]------------------ Conflicting
+for all vertices using code from net : {0: 0, 1: 6, 2: 0, 3: 0, 4: 0}------- Conflicting
+
+
