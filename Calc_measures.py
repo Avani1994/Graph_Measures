@@ -15,7 +15,7 @@ from random import *
 
 #g = Graph.Read_Adjacency('/Users/avanisharma/Masters/2nd_Sem/Research Project/HCP/HCP_Untransformed_distmat/100307dist.txt', sep=',', comment_char='#', attribute="weight")
 
-g = Graph.Read_Adjacency('modularity_eg3.txt', sep=',', comment_char='#', attribute="weight")
+g = Graph.Read_Adjacency('assort_graph_eg1.txt', sep=',', comment_char='#', attribute="weight")
 weightss = g.es["weight"]
 vertices = len(g.vs)
 vertexlist = range(vertices)
